@@ -1,0 +1,18 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ts_queue.c">
+  <fCall global="true" name="mii_ts_queue_init"/>
+  <fCall global="true" name="mii_ts_queue_init.nstackwords"/>
+  <fCall global="true" name="mii_ts_queue_init.maxcores"/>
+  <fCall global="true" name="mii_ts_queue_init.maxtimers"/>
+  <fCall global="true" name="mii_ts_queue_init.maxchanends"/>
+  <fCall global="true" name="mii_ts_queue_add_entry"/>
+  <fCall global="true" name="mii_ts_queue_add_entry.nstackwords"/>
+  <fCall global="true" name="mii_ts_queue_add_entry.maxcores"/>
+  <fCall global="true" name="mii_ts_queue_add_entry.maxtimers"/>
+  <fCall global="true" name="mii_ts_queue_add_entry.maxchanends"/>
+  <fCall global="true" name="mii_ts_queue_get_entry"/>
+  <fCall global="true" name="mii_ts_queue_get_entry.nstackwords"/>
+  <fCall global="true" name="mii_ts_queue_get_entry.maxcores"/>
+  <fCall global="true" name="mii_ts_queue_get_entry.maxtimers"/>
+  <fCall global="true" name="mii_ts_queue_get_entry.maxchanends"/>
+  <fCall global="true" name="ethernet_memory_lock"/>
+</preCompilationAnalysis>

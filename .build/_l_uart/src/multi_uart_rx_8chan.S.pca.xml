@@ -1,0 +1,7 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_uart/src/multi_uart_rx_8chan.S">
+  <fCall global="true" name="uart_rx_loop_8.nstackwords"/>
+  <fCall global="true" name="uart_rx_loop_8.maxcores"/>
+  <fCall global="true" name="uart_rx_loop_8.maxtimers"/>
+  <fCall global="true" name="uart_rx_loop_8.maxchanends"/>
+  <fCall global="true" name="uart_rx_loop_8"/>
+</preCompilationAnalysis>

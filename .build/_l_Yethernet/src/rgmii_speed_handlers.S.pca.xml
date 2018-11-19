@@ -1,0 +1,8 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/rgmii_speed_handlers.S">
+  <fCall global="true" name="notification_channel_ids"/>
+  <fCall global="true" name="log_speed_change_pointers.nstackwords"/>
+  <fCall global="true" name="log_speed_change_pointers"/>
+  <fCall global="true" name="log_speed_change_pointers.maxcores"/>
+  <fCall global="true" name="log_speed_change_pointers.maxtimers"/>
+  <fCall global="true" name="log_speed_change_pointers.maxchanends"/>
+</preCompilationAnalysis>

@@ -1,0 +1,7 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/rgmii_buffering_c_support.c">
+  <fCall global="true" name="buffers_free_initialize_c"/>
+  <fCall global="true" name="buffers_free_initialize_c.nstackwords"/>
+  <fCall global="true" name="buffers_free_initialize_c.maxcores"/>
+  <fCall global="true" name="buffers_free_initialize_c.maxtimers"/>
+  <fCall global="true" name="buffers_free_initialize_c.maxchanends"/>
+</preCompilationAnalysis>

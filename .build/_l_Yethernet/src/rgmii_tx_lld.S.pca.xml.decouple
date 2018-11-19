@@ -1,0 +1,9 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/rgmii_tx_lld.S">
+  <fCall global="true" name="rgmii_tx_lld.nstackwords"/>
+  <fCall global="true" name="rgmii_tx_lld"/>
+  <fCall global="true" name="rgmii_tx_lld.maxcores"/>
+  <fCall global="true" name="rgmii_tx_lld.maxtimers"/>
+  <fCall global="true" name="rgmii_tx_lld.maxchanends"/>
+  <fCall global="true" name="crc_poly"/>
+  <fCall global="true" name="sof_value"/>
+</preCompilationAnalysis>

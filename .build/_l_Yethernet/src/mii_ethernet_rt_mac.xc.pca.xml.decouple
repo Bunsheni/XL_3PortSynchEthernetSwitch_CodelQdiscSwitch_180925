@@ -1,0 +1,1492 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc">
+<fDef name="drop_lp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="get_tile_id_from_chanend" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" noreturn="false" doNotSpecialize="false" numParams="6"/>
+<fDef name="handle_incoming_packet" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" noreturn="false" doNotSpecialize="false" numParams="5"/>
+<fDef name="handle_ts_queue" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<fDef name="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" noreturn="true" doNotSpecialize="false" numParams="19"/>
+<fDef name="reserve" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="update_client_state" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<fDef name="_complete_send_packet" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="_get_outgoing_timestamp" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="_init_send_packet" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="_safe_memcmp" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<fDef name="_safe_memmove" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<fDef name="_safe_memset" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<fDef name="add_ethertype_filter" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="add_macaddr_filter" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="del_all_macaddr_filters" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="del_ethertype_filter" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="del_macaddr_filter" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="delay_microseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_milliseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_seconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="disable_link_status_notification" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="disable_strip_vlan_tag" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="enable_link_status_notification" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="enable_strip_vlan_tag" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="ethernet_receive_hp_packet" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<fDef name="ethernet_send_hp_packet" global="true" noreturn="false" doNotSpecialize="true" numParams="4"/>
+<fDef name="get_index" global="true" interface="ethernet_rx_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="get_macaddr" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="get_packet" global="true" interface="ethernet_rx_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="get_tile_id_and_timer_value" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="hwlock_acquire" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="hwlock_alloc" global="true" noreturn="false" doNotSpecialize="true" numParams="0"/>
+<fDef name="hwlock_free" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="hwlock_release" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="increment_and_wrap_power_of_2" global="true" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<fDef name="increment_and_wrap_to_zero" global="true" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<fDef name="mii_ethernet_rt_mac" global="true" noreturn="false" doNotSpecialize="false" numParams="20"/>
+<fDef name="packet_ready" global="true" interface="ethernet_rx_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="send_packet" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="true" numParams="4"/>
+<fDef name="send_timed_packet" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="true" numParams="4"/>
+<fDef name="set_egress_qav_idle_slope" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="set_egress_timestamp_latency" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="set_ingress_timestamp_latency" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="set_link_state" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="set_macaddr" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="xassert_msg" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fCall name="memcmp" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="2" caller="_safe_memcmp" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_array_bound" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_trap" global="true" numArgs="0">
+</fCall>
+<fCall name="memmove" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="2" caller="_safe_memmove" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_array_bound" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_trap" global="true" numArgs="0">
+</fCall>
+<fCall name="memset" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="1" caller="_safe_memset" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="2" caller="_safe_memset" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_init_send_packet" global="true" interface="ethernet_tx_if" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="2" caller="send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_complete_send_packet" global="true" interface="ethernet_tx_if" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="3" caller="send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_init_send_packet" global="true" interface="ethernet_tx_if" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="2" caller="send_timed_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="send_timed_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_complete_send_packet" global="true" interface="ethernet_tx_if" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="send_timed_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="3" caller="send_timed_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_get_outgoing_timestamp" global="true" interface="ethernet_tx_if" numArgs="0">
+</fCall>
+<fCall name="sin_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="ethernet_receive_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="false" val="20"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sin_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="ethernet_receive_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sin_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="ethernet_receive_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sout_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="ethernet_send_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="2" caller="ethernet_send_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_reserve_at_least" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="2" caller="reserve" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="reserve" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_my_next_buf" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_incoming_packet" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="1" caller="handle_incoming_packet" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="increment_and_wrap_to_zero" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="packet_ready" global="true" interface="ethernet_rx_if" numArgs="0">
+</fCall>
+<fCall name="mii_free_index" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_incoming_packet" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="1" caller="handle_incoming_packet" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_move_my_rd_index" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_incoming_packet" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="1" caller="handle_incoming_packet" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_and_dec_transmit_count" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_free_index" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="0" caller="drop_lp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="increment_and_wrap_to_zero" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_my_next_buf" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="1" caller="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="ethernet_filter_result_is_hp" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_wrap_ptr" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sout_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="4" caller="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="false" val="20"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sout_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="4" caller="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sout_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="4" caller="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_free_index" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="1" caller="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="packet_ready" global="true" interface="ethernet_rx_if" numArgs="0">
+</fCall>
+<fCall name="mii_ts_queue_get_entry" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="handle_ts_queue" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_my_rd_index" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="2" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_my_rd_index" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="1" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="init_rx_client_state" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="12" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="init_rx_client_state" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="init_tx_client_state" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="14" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="init_tx_client_state" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="printf" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_wrap_ptr" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="0" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="1" caller="get_packet" global="true" interface="ethernet_rx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="12"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="1" caller="get_packet" global="true" interface="ethernet_rx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="false" val="20"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_and_dec_transmit_count" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_free_index" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="1" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="increment_and_wrap_to_zero" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="16"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="packet_ready" global="true" interface="ethernet_rx_if" numArgs="0">
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="1" caller="get_macaddr" global="true" interface="ethernet_cfg_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="false" val="6"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="1" caller="set_macaddr" global="true" interface="ethernet_cfg_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="false" val="6"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="update_client_state" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="interface"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="12" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="ethernet_add_filter_table_entry" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="ethernet_del_filter_table_entry" global="true" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="ethernet_clear_filter_table" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_trap" global="true" numArgs="0">
+</fCall>
+<fCall name="get_tile_id_from_chanend" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="17" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_trap" global="true" numArgs="0">
+</fCall>
+<fCall name="__builtin_trap" global="true" numArgs="0">
+</fCall>
+<fCall name="mii_get_wrap_ptr" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="5" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sin_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sin_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_commit" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="5" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_add_packet" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="7" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_wrap_ptr" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="4" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="0" caller="_complete_send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_memcpy_xc" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_commit" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="4" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_add_packet" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="6" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="handle_incoming_hp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="6">
+  <arg num="0">
+    <passThroughArg param="0" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="handle_incoming_packet" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="5">
+  <arg num="0">
+    <passThroughArg param="1" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="interface"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <passThroughArg param="12" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_next_rdptr" global="true" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="1" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_rdptr" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="1" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_reserve_at_least" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="2000"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="drop_lp_packets" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="1" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="12" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_packet_queue_full" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="7" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_rdptr" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="7" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="reserve" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="5" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_packet_queue_full" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="6" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_get_rdptr" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="6" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="reserve" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="14" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="4" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="handle_ts_queue" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="8" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="14" caller="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_mempool" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_mempool" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_mempool" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_packet_queue" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_packet_queue" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_packet_queue" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_packet_queue" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_packet_queue" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_init_lock" global="true" numArgs="0">
+</fCall>
+<fCall name="printf" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_trap" global="true" numArgs="0">
+</fCall>
+<fCall name="__builtin_trap" global="true" numArgs="0">
+</fCall>
+<fCall name="mii_ts_queue_init" global="true" numArgs="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_master_init" global="true" numArgs="9">
+  <arg num="0">
+    <passThroughArg param="8" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="11" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="15" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <passThroughArg param="12" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="13" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="16" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="8">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="init_server_port_state" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_master_rx_pins" global="true" numArgs="7" impId="0">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="11" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="6">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_master_tx_pins" global="true" numArgs="7" impId="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="6">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_ethernet_filter" global="true" numArgs="5" impId="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_ethernet_server" global="false" unit="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_ethernet_rt_mac.xc" numArgs="19" impId="3">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="6">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="7">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="8">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="9">
+    <values>
+      <value type="interface"/>
+    </values>
+  </arg>
+  <arg num="10">
+    <passThroughArg param="1" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="11">
+    <values>
+      <value type="interface"/>
+    </values>
+  </arg>
+  <arg num="12">
+    <passThroughArg param="3" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="13">
+    <values>
+      <value type="interface"/>
+    </values>
+  </arg>
+  <arg num="14">
+    <passThroughArg param="5" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="15">
+    <passThroughArg param="6" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="16">
+    <passThroughArg param="7" caller="mii_ethernet_rt_mac" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="17">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="18">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+</preCompilationAnalysis>

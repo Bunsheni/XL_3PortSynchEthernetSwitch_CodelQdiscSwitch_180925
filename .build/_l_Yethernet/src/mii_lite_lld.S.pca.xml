@@ -1,0 +1,10 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_lite_lld.S">
+  <fCall global="true" name="polynomial"/>
+  <fCall global="true" name="mii_lite_lld.nstackwords"/>
+  <fCall global="true" name="mii_lite_lld.maxcores"/>
+  <fCall global="true" name="mii_lite_lld.maxtimers"/>
+  <fCall global="true" name="mii_lite_lld.maxchanends"/>
+  <fCall global="true" name="mii_lite_lld"/>
+  <fCall global="true" name="tail_values"/>
+  <fCall global="true" name="tail_values.globound"/>
+</preCompilationAnalysis>

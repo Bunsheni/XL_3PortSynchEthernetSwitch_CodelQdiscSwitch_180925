@@ -1,0 +1,14 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/rgmii_rx_lld.S">
+  <fCall global="true" name="sof_value"/>
+  <fCall global="true" name="crc_poly"/>
+  <fCall global="true" name="vlan_prio_tag"/>
+  <fCall global="true" name="max_packet_len"/>
+  <fCall global="true" name="max_num_bytes"/>
+  <fCall global="true" name="mii_count_crc_error"/>
+  <fCall global="true" name="mii_count_len_error"/>
+  <fCall global="true" name="rgmii_rx_lld.nstackwords"/>
+  <fCall global="true" name="rgmii_rx_lld"/>
+  <fCall global="true" name="rgmii_rx_lld.maxcores"/>
+  <fCall global="true" name="rgmii_rx_lld.maxtimers"/>
+  <fCall global="true" name="rgmii_rx_lld.maxchanends"/>
+</preCompilationAnalysis>

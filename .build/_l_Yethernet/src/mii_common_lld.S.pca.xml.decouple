@@ -1,0 +1,7 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_common_lld.S">
+  <fCall global="true" name="mii_setup_error_port.nstackwords"/>
+  <fCall global="true" name="mii_setup_error_port"/>
+  <fCall global="true" name="mii_setup_error_port.maxcores"/>
+  <fCall global="true" name="mii_setup_error_port.maxtimers"/>
+  <fCall global="true" name="mii_setup_error_port.maxchanends"/>
+</preCompilationAnalysis>

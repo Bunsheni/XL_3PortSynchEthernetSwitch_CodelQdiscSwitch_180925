@@ -1,0 +1,9 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii_lite_interrupt.S">
+  <fCall global="true" name="mii_lite_install_handler.nstackwords"/>
+  <fCall global="true" name="mii_lite_install_handler.maxcores"/>
+  <fCall global="true" name="mii_lite_install_handler.maxtimers"/>
+  <fCall global="true" name="mii_lite_install_handler.maxchanends"/>
+  <fCall global="true" name="mii_lite_install_handler.maxsync"/>
+  <fCall global="true" name="mii_lite_install_handler"/>
+  <fCall global="true" name="mii_client_user"/>
+</preCompilationAnalysis>

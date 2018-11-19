@@ -1,0 +1,27 @@
+<preCompilationAnalysis file="../src/queue.c">
+  <fCall global="true" name="init_queue"/>
+  <fCall global="true" name="init_queue.nstackwords"/>
+  <fCall global="true" name="malloc.nstackwords"/>
+  <fCall global="true" name="init_queue.maxcores"/>
+  <fCall global="true" name="malloc.maxcores"/>
+  <fCall global="true" name="init_queue.maxtimers"/>
+  <fCall global="true" name="malloc.maxtimers"/>
+  <fCall global="true" name="init_queue.maxchanends"/>
+  <fCall global="true" name="malloc.maxchanends"/>
+  <fCall global="true" name="enqueue"/>
+  <fCall global="true" name="enqueue.nstackwords"/>
+  <fCall global="true" name="puts.nstackwords"/>
+  <fCall global="true" name="enqueue.maxcores"/>
+  <fCall global="true" name="puts.maxcores"/>
+  <fCall global="true" name="enqueue.maxtimers"/>
+  <fCall global="true" name="puts.maxtimers"/>
+  <fCall global="true" name="enqueue.maxchanends"/>
+  <fCall global="true" name="puts.maxchanends"/>
+  <fCall global="true" name="dequeue"/>
+  <fCall global="true" name="dequeue.nstackwords"/>
+  <fCall global="true" name="dequeue.maxcores"/>
+  <fCall global="true" name="dequeue.maxtimers"/>
+  <fCall global="true" name="dequeue.maxchanends"/>
+  <fCall global="true" name="malloc"/>
+  <fCall global="true" name="puts"/>
+</preCompilationAnalysis>

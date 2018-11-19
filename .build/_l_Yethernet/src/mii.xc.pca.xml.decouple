@@ -1,0 +1,389 @@
+<preCompilationAnalysis file="D:/SONMH/OneDrive/Workspace/XMOS/lib_Yethernet/src/mii.xc">
+<fDef name="_complete_send_packet" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="false" numParams="4"/>
+<fDef name="_get_outgoing_timestamp" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="_init_send_packet" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="add_ethertype_filter" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="add_macaddr_filter" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="del_all_macaddr_filters" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="del_ethertype_filter" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="del_macaddr_filter" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="delay_microseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_milliseconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="delay_seconds" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="disable_link_status_notification" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="disable_strip_vlan_tag" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="enable_link_status_notification" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="enable_strip_vlan_tag" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="ethernet_receive_hp_packet" global="true" noreturn="false" doNotSpecialize="true" numParams="3"/>
+<fDef name="ethernet_send_hp_packet" global="true" noreturn="false" doNotSpecialize="true" numParams="4"/>
+<fDef name="get_incoming_packet" global="true" interface="mii_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="get_index" global="true" interface="ethernet_rx_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="get_macaddr" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="get_packet" global="true" interface="ethernet_rx_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="get_tile_id_and_timer_value" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="hwlock_acquire" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="hwlock_alloc" global="true" noreturn="false" doNotSpecialize="true" numParams="0"/>
+<fDef name="hwlock_free" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="hwlock_release" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="increment_and_wrap_power_of_2" global="true" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<fDef name="increment_and_wrap_to_zero" global="true" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<fDef name="init" global="true" interface="mii_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="mii_driver" global="true" noreturn="false" doNotSpecialize="false" numParams="13"/>
+<fDef name="mii_get_notification_chanend" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="mii_get_out_chanend" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="mii_handler" global="true" noreturn="true" doNotSpecialize="false" numParams="5"/>
+<fDef name="mii_incoming_packet_" global="true" noreturn="false" doNotSpecialize="true" numParams="2"/>
+<fDef name="mii_packet_sent_" global="true" noreturn="false" doNotSpecialize="true" numParams="1"/>
+<fDef name="packet_ready" global="true" interface="ethernet_rx_if" noreturn="false" doNotSpecialize="false" numParams="0"/>
+<fDef name="release_packet" global="true" interface="mii_if" noreturn="false" doNotSpecialize="false" numParams="1"/>
+<fDef name="send_packet" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="true" numParams="4"/>
+<fDef name="send_packet" global="true" interface="mii_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="send_timed_packet" global="true" interface="ethernet_tx_if" noreturn="false" doNotSpecialize="true" numParams="4"/>
+<fDef name="set_egress_qav_idle_slope" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fDef name="set_egress_timestamp_latency" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="set_ingress_timestamp_latency" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="set_link_state" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="3"/>
+<fDef name="set_macaddr" global="true" interface="ethernet_cfg_if" noreturn="false" doNotSpecialize="false" numParams="2"/>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="delay_ticks_longlong" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_in_uchar" global="true" numArgs="1">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="__builtin_chkct" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_init_send_packet" global="true" interface="ethernet_tx_if" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="2" caller="send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_complete_send_packet" global="true" interface="ethernet_tx_if" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="3" caller="send_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_init_send_packet" global="true" interface="ethernet_tx_if" numArgs="2">
+  <arg num="0">
+    <passThroughArg param="2" caller="send_timed_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="send_timed_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_complete_send_packet" global="true" interface="ethernet_tx_if" numArgs="4">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="send_timed_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="1"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="3" caller="send_timed_packet" global="true" interface="ethernet_tx_if"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="_get_outgoing_timestamp" global="true" interface="ethernet_tx_if" numArgs="0">
+</fCall>
+<fCall name="sin_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="ethernet_receive_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="false" val="20"/></value>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sin_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="ethernet_receive_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sin_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="ethernet_receive_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="sout_char_array" global="true" numArgs="3">
+  <arg num="0">
+    <passThroughArg param="0" caller="ethernet_send_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="2" caller="ethernet_send_hp_packet" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_master_init" global="true" numArgs="9">
+  <arg num="0">
+    <passThroughArg param="0" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="3" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="8" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <passThroughArg param="4" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="5" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="6">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="7">
+    <passThroughArg param="9" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="8">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_lite_driver" global="true" numArgs="6">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="3" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="7" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <passThroughArg param="10" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="5">
+    <passThroughArg param="11" caller="mii_driver" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_lite_buffer_init" global="true" numArgs="6">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="0" caller="mii_handler" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="2">
+    <passThroughArg param="2" caller="mii_handler" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="3">
+    <passThroughArg param="1" caller="mii_handler" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="4">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="5">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_lite_out_init" global="true" numArgs="1">
+  <arg num="0">
+    <passThroughArg param="1" caller="mii_handler" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_lite_free_in_buffer" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_lite_get_in_buffer" global="true" numArgs="2">
+  <arg num="0">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="1">
+    <passThroughArg param="2" caller="mii_handler" global="true"/>
+    <values>
+    </values>
+  </arg>
+</fCall>
+<fCall name="mii_lite_out_packet" global="true" numArgs="4">
+  <arg num="0">
+    <passThroughArg param="1" caller="mii_handler" global="true"/>
+    <values>
+    </values>
+  </arg>
+  <arg num="1">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+  <arg num="2">
+    <values>
+      <value type="intval"><intval isSigned="true" val="0"/></value>
+    </values>
+  </arg>
+  <arg num="3">
+    <values>
+      <value type="unknown"/>
+    </values>
+  </arg>
+</fCall>
+</preCompilationAnalysis>

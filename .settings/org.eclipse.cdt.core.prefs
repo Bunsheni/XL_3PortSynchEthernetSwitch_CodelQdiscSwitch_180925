@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/com.xmos.cdt.toolchain.57469799/XDE_BUILD/delimiter=;
+environment/project/com.xmos.cdt.toolchain.57469799/XDE_BUILD/operation=append
+environment/project/com.xmos.cdt.toolchain.57469799/XDE_BUILD/value=true
+environment/project/com.xmos.cdt.toolchain.57469799/XMOS_MODULE_PATH/delimiter=;
+environment/project/com.xmos.cdt.toolchain.57469799/XMOS_MODULE_PATH/operation=append
+environment/project/com.xmos.cdt.toolchain.57469799/XMOS_MODULE_PATH/value=D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Endpoint-Software_6.1.1\\sc_i2c\\doc;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Endpoint-Software_6.1.1\\sc_otp\\doc;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Endpoint-Software_6.1.1\\sc_slicekit_support\\doc;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Endpoint-Software_6.1.1\\sc_util\\doc;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Daisy-Chain-Software_1.0.6\\sw_avb_dc\\doc;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Endpoint-Software_6.1.1\\sw_avb_lc\\doc;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Endpoint-Software_6.1.1\\sw_avb_lc\\app_avb_lc_demo;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Endpoint-Software_6.1.1\\sw_avb_lc\\app_avb_tsi_listener;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Endpoint-Software_6.1.1\\sw_avb_lc\\app_avb_tsi_talker;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Daisy-Chain-Software_1.0.6\\sw_avb_dc\\app_daisy_chain;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\workspaceorg\\app_simple_avb_demo;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\lib_xtcp\\lib_xtcp;D\:\\SONMH\\OneDrive\\Workspace\\XMOS\\AVB-Daisy-Chain-Software_1.0.6\\sc_avb\\module_avb
+environment/project/com.xmos.cdt.toolchain.57469799/append=true
+environment/project/com.xmos.cdt.toolchain.57469799/appendContributed=true
